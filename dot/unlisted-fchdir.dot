@@ -1,0 +1,51 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x803d2d300" [label="{fts_build}"];
+	"Node0x803d2d300" -> "Node0x803d2d2a0" [color="#00000033"];
+	"Node0x803d2d300" -> "Node0x803d2d1e0" [color="#00000033"];
+
+	"Node0x80814c060" [label="{fts_build.667}"];
+	"Node0x80814c060" -> "Node0x80814c000" [color="#00000033"];
+	"Node0x80814c060" -> "Node0x803d2d1e0" [color="#00000033"];
+
+	"Node0x803d2d240" [label="{fts_read}"];
+	"Node0x803d2d240" -> "Node0x803d2d300" [color="#00000033"];
+	"Node0x803d2d240" -> "Node0x803d2d2a0" [color="#00000033"];
+	"Node0x803d2d240" -> "Node0x803d2d1e0" [color="#00000033"];
+
+	"Node0x80814c000" [label="{fts_safe_changedir.666}"];
+	"Node0x80814c000" -> "Node0x803d2d1e0" [color="#00000033"];
+
+	"Node0x803d2d2a0" [label="{fts_safe_changedir}"];
+	"Node0x803d2d2a0" -> "Node0x803d2d1e0" [color="#00000033"];
+
+	"Node0x803d2d1e0" [label="{fchdir}"];
+
+	"Node0x80813dd20" [label="{nftw}"];
+	"Node0x80813dd20" -> "Node0x803d2d180" [color="#00000033"];
+	"Node0x80813dd20" -> "Node0x803d2d240" [color="#00000033"];
+
+	"Node0x808144fa0" [label="{__fts_read_44bsd}"];
+	"Node0x808144fa0" -> "Node0x80814c000" [color="#00000033"];
+	"Node0x808144fa0" -> "Node0x803d2d1e0" [color="#00000033"];
+	"Node0x808144fa0" -> "Node0x80814c060" [color="#00000033"];
+
+	"Node0x808144f40" [label="{__fts_close_44bsd}"];
+	"Node0x808144f40" -> "Node0x803d2d1e0" [color="#00000033"];
+
+	"Node0x803d2d180" [label="{fts_close}"];
+	"Node0x803d2d180" -> "Node0x803d2d1e0" [color="#00000033"];
+
+	"Node0x803d2d600" [label="{fts_children}"];
+	"Node0x803d2d600" -> "Node0x803d2d300" [color="#00000033"];
+	"Node0x803d2d600" -> "Node0x803d2d1e0" [color="#00000033"];
+
+	"Node0x803d2d780" [label="{ftw}"];
+	"Node0x803d2d780" -> "Node0x803d2d180" [color="#00000033"];
+	"Node0x803d2d780" -> "Node0x803d2d240" [color="#00000033"];
+
+	"Node0x80814c240" [label="{__fts_children_44bsd}"];
+	"Node0x80814c240" -> "Node0x803d2d1e0" [color="#00000033"];
+	"Node0x80814c240" -> "Node0x80814c060" [color="#00000033"];
+
+}

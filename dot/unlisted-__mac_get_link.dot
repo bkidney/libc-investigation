@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80564a160" [label="{mac_get_link}"];
+	"Node0x80564a160" -> "Node0x80564a1c0" [color="#00000033"];
+
+	"Node0x80564a1c0" [label="{__mac_get_link}"];
+
+}

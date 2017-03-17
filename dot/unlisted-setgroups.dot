@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80813d780" [label="{initgroups}"];
+	"Node0x80813d780" -> "Node0x80813d840" [color="#00000033"];
+
+	"Node0x80813d840" [label="{setgroups}"];
+
+}

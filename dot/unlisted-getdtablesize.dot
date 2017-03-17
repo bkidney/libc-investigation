@@ -1,0 +1,17 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x805699bc0" [label="{_rpc_dtablesize}"];
+	"Node0x805699bc0" -> "Node0x80565b940" [color="#00000033"];
+
+	"Node0x8056ae440" [label="{__rpc_get_time_offset}"];
+	"Node0x8056ae440" -> "Node0x805699bc0" [color="#00000033"];
+
+	"Node0x80565b8e0" [label="{f_prealloc}"];
+	"Node0x80565b8e0" -> "Node0x80565b940" [color="#00000033"];
+
+	"Node0x8056afd60" [label="{rtime}"];
+	"Node0x8056afd60" -> "Node0x805699bc0" [color="#00000033"];
+
+	"Node0x80565b940" [label="{getdtablesize}"];
+
+}

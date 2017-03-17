@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x805648360" [label="{__acl_get_link}"];
+
+	"Node0x805648300" [label="{acl_get_link_np}"];
+	"Node0x805648300" -> "Node0x805648360" [color="#00000033"];
+
+}

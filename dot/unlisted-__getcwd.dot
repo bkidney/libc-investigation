@@ -1,0 +1,14 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x8056c9260" [label="{realpath}"];
+	"Node0x8056c9260" -> "Node0x807dc1ac0" [color="#00000033"];
+
+	"Node0x807dc1a60" [label="{getwd}"];
+	"Node0x807dc1a60" -> "Node0x807dc1ac0" [color="#00000033"];
+
+	"Node0x807dc1ac0" [label="{getcwd}"];
+	"Node0x807dc1ac0" -> "Node0x803d2de40" [color="#00000033"];
+
+	"Node0x803d2de40" [label="{__getcwd}"];
+
+}

@@ -1,0 +1,11 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80814dbc0" [label="{_libc_sem_close_compat}"];
+	"Node0x80814dbc0" -> "Node0x80814db60" [color="#00000033"];
+
+	"Node0x80814db60" [label="{ksem_close}"];
+
+	"Node0x80814daa0" [label="{_libc_sem_open_compat}"];
+	"Node0x80814daa0" -> "Node0x80814db60" [color="#00000033"];
+
+}

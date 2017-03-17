@@ -1,0 +1,32 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80563d900" [label="{sctp_getpaddrs}"];
+	"Node0x80563d900" -> "Node0x80563d660" [color="#00000033"];
+
+	"Node0x80563dc00" [label="{sctp_sendx}"];
+	"Node0x80563dc00" -> "Node0x80563db40" [color="#00000033"];
+
+	"Node0x80563dc60" [label="{sctp_sendmsgx}"];
+	"Node0x80563dc60" -> "Node0x80563dc00" [color="#00000033"];
+
+	"Node0x80563d660" [label="{getsockopt}"];
+
+	"Node0x80563dde0" [label="{sctp_sendv}"];
+	"Node0x80563dde0" -> "Node0x80563db40" [color="#00000033"];
+
+	"Node0x80563d5a0" [label="{sctp_getaddrlen}"];
+	"Node0x80563d5a0" -> "Node0x80563d660" [color="#00000033"];
+
+	"Node0x80563db40" [label="{sctp_getassocid}"];
+	"Node0x80563db40" -> "Node0x80563d660" [color="#00000033"];
+
+	"Node0x80564a220" [label="{mac_get_peer}"];
+	"Node0x80564a220" -> "Node0x80563d660" [color="#00000033"];
+
+	"Node0x80563d8a0" [label="{sctp_opt_info}"];
+	"Node0x80563d8a0" -> "Node0x80563d660" [color="#00000033"];
+
+	"Node0x80563d9c0" [label="{sctp_getladdrs}"];
+	"Node0x80563d9c0" -> "Node0x80563d660" [color="#00000033"];
+
+}

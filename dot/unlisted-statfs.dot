@@ -1,0 +1,53 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x803d2d300" [label="{fts_build}"];
+	"Node0x803d2d300" -> "Node0x803d2d420" [color="#00000033"];
+
+	"Node0x803d2d240" [label="{fts_read}"];
+	"Node0x803d2d240" -> "Node0x803d2d300" [color="#00000033"];
+
+	"Node0x8043d7ac0" [label="{fixfsfile}"];
+	"Node0x8043d7ac0" -> "Node0x8043d7b80" [color="#00000033"];
+
+	"Node0x8043d78e0" [label="{fstabscan}"];
+	"Node0x8043d78e0" -> "Node0x8043d7ac0" [color="#00000033"];
+
+	"Node0x803d2d420" [label="{fts_ufslinks}"];
+	"Node0x803d2d420" -> "Node0x8043d7b80" [color="#00000033"];
+
+	"Node0x803d2d600" [label="{fts_children}"];
+	"Node0x803d2d600" -> "Node0x803d2d300" [color="#00000033"];
+
+	"Node0x803d2d780" [label="{ftw}"];
+	"Node0x803d2d780" -> "Node0x803d2d240" [color="#00000033"];
+
+	"Node0x80814c240" [label="{__fts_children_44bsd}"];
+	"Node0x80814c240" -> "Node0x80814c060" [color="#00000033"];
+
+	"Node0x8043d7c40" [label="{getfsspec}"];
+	"Node0x8043d7c40" -> "Node0x8043d78e0" [color="#00000033"];
+
+	"Node0x8043d7820" [label="{getfsent}"];
+	"Node0x8043d7820" -> "Node0x8043d78e0" [color="#00000033"];
+
+	"Node0x8043d7ca0" [label="{getfsfile}"];
+	"Node0x8043d7ca0" -> "Node0x8043d78e0" [color="#00000033"];
+
+	"Node0x80814c120" [label="{fts_ufslinks.670}"];
+	"Node0x80814c120" -> "Node0x8043d7b80" [color="#00000033"];
+
+	"Node0x808144fa0" [label="{__fts_read_44bsd}"];
+	"Node0x808144fa0" -> "Node0x80814c060" [color="#00000033"];
+
+	"Node0x808142d80" [label="{statvfs}"];
+	"Node0x808142d80" -> "Node0x8043d7b80" [color="#00000033"];
+
+	"Node0x80814c060" [label="{fts_build.667}"];
+	"Node0x80814c060" -> "Node0x80814c120" [color="#00000033"];
+
+	"Node0x8043d7b80" [label="{statfs}"];
+
+	"Node0x80813dd20" [label="{nftw}"];
+	"Node0x80813dd20" -> "Node0x803d2d240" [color="#00000033"];
+
+}

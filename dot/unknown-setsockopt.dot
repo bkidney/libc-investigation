@@ -1,0 +1,17 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80563d720" [label="{sctp_connectx}"];
+	"Node0x80563d720" -> "Node0x80563d7e0" [color="#00000033"];
+
+	"Node0x80563d840" [label="{sctp_bindx}"];
+	"Node0x80563d840" -> "Node0x80563d7e0" [color="#00000033"];
+
+	"Node0x80563dc00" [label="{sctp_sendx}"];
+	"Node0x80563dc00" -> "Node0x80563d7e0" [color="#00000033"];
+
+	"Node0x80563dc60" [label="{sctp_sendmsgx}"];
+	"Node0x80563dc60" -> "Node0x80563dc00" [color="#00000033"];
+
+	"Node0x80563d7e0" [label="{setsockopt}"];
+
+}

@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x803d2fa00" [label="{getmntinfo}"];
+	"Node0x803d2fa00" -> "Node0x803d2fa60" [color="#00000033"];
+
+	"Node0x803d2fa60" [label="{getfsstat}"];
+
+}

@@ -1,0 +1,139 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x805627e80" [label="{_dns_getnetbyaddr}"];
+	"Node0x805627e80" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x803d2f7c0" [label="{gethostname}"];
+
+	"Node0x8056ae740" [label="{getnetname}"];
+	"Node0x8056ae740" -> "Node0x8056afac0" [color="#00000033"];
+
+	"Node0x8056a6680" [label="{authdes_seccreate}"];
+	"Node0x8056a6680" -> "Node0x8056ae6e0" [color="#00000033"];
+
+	"Node0x805631a20" [label="{setnetent}"];
+	"Node0x805631a20" -> "Node0x805631120" [color="#00000033"];
+
+	"Node0x805633ee0" [label="{getipnodebyname}"];
+	"Node0x805633ee0" -> "Node0x805625d80" [color="#00000033"];
+	"Node0x805633ee0" -> "Node0x805627700" [color="#00000033"];
+
+	"Node0x8056afac0" [label="{host2netname}"];
+	"Node0x8056afac0" -> "Node0x803d2f7c0" [color="#00000033"];
+
+	"Node0x805651f20" [label="{__res_mkupdate}"];
+	"Node0x805651f20" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x805626b60" [label="{_sethostdnsent}"];
+	"Node0x805626b60" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x8056ae6e0" [label="{authdes_pk_seccreate}"];
+	"Node0x8056ae6e0" -> "Node0x8056ae740" [color="#00000033"];
+
+	"Node0x8056277c0" [label="{sethostent}"];
+	"Node0x8056277c0" -> "Node0x805626b60" [color="#00000033"];
+
+	"Node0x805697ee0" [label="{rpc_broadcast}"];
+	"Node0x805697ee0" -> "Node0x805697a00" [color="#00000033"];
+
+	"Node0x805625c60" [label="{_dns_getaddrinfo}"];
+	"Node0x805625c60" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x805627be0" [label="{getipnodebyaddr}"];
+	"Node0x805627be0" -> "Node0x805627760" [color="#00000033"];
+	"Node0x805627be0" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x805652340" [label="{__res_randomid}"];
+	"Node0x805652340" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x805627a00" [label="{getnameinfo_inet}"];
+	"Node0x805627a00" -> "Node0x805627be0" [color="#00000033"];
+
+	"Node0x805652280" [label="{__res_querydomain}"];
+	"Node0x805652280" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x8056ae4a0" [label="{get_server}"];
+	"Node0x8056ae4a0" -> "Node0x8056276a0" [color="#00000033"];
+
+	"Node0x805651ce0" [label="{__res_vinit}"];
+	"Node0x805651ce0" -> "Node0x803d2f7c0" [color="#00000033"];
+
+	"Node0x80569af40" [label="{getrpcport}"];
+	"Node0x80569af40" -> "Node0x8056276a0" [color="#00000033"];
+
+	"Node0x805631120" [label="{_setnetdnsent}"];
+	"Node0x805631120" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x805697580" [label="{authunix_create_default}"];
+	"Node0x805697580" -> "Node0x803d2f7c0" [color="#00000033"];
+
+	"Node0x8056275e0" [label="{gethostbyname2_r}"];
+	"Node0x8056275e0" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x805652220" [label="{__res_search}"];
+	"Node0x805652220" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x805652160" [label="{__res_update}"];
+	"Node0x805652160" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x805651e00" [label="{__fp_nquery}"];
+	"Node0x805651e00" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x805626e00" [label="{gethostent}"];
+	"Node0x805626e00" -> "Node0x805626d40" [color="#00000033"];
+
+	"Node0x805626d40" [label="{gethostent_r}"];
+	"Node0x805626d40" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x805627640" [label="{gethostbyaddr_r}"];
+	"Node0x805627640" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x805627700" [label="{gethostbyname2}"];
+	"Node0x805627700" -> "Node0x8056275e0" [color="#00000033"];
+
+	"Node0x805651fe0" [label="{__res_query}"];
+	"Node0x805651fe0" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x805651d40" [label="{__p_query}"];
+	"Node0x805651d40" -> "Node0x805651da0" [color="#00000033"];
+
+	"Node0x805627760" [label="{gethostbyaddr}"];
+	"Node0x805627760" -> "Node0x805627640" [color="#00000033"];
+
+	"Node0x805651c80" [label="{__res_init}"];
+	"Node0x805651c80" -> "Node0x805651ce0" [color="#00000033"];
+
+	"Node0x805697a00" [label="{rpc_broadcast_exp}"];
+	"Node0x805697a00" -> "Node0x805697580" [color="#00000033"];
+
+	"Node0x805625d80" [label="{__res_ninit}"];
+	"Node0x805625d80" -> "Node0x805651ce0" [color="#00000033"];
+
+	"Node0x8056520a0" [label="{__res_send}"];
+	"Node0x8056520a0" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x805651ec0" [label="{__res_mkquery}"];
+	"Node0x805651ec0" -> "Node0x805651c80" [color="#00000033"];
+
+	"Node0x805651da0" [label="{__fp_query}"];
+	"Node0x805651da0" -> "Node0x805651e00" [color="#00000033"];
+
+	"Node0x8056ae440" [label="{__rpc_get_time_offset}"];
+	"Node0x8056ae440" -> "Node0x8056ae4a0" [color="#00000033"];
+
+	"Node0x8056a6620" [label="{authdes_create}"];
+	"Node0x8056a6620" -> "Node0x8056a6680" [color="#00000033"];
+
+	"Node0x8056273a0" [label="{gethostbyname_r}"];
+	"Node0x8056273a0" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x8056310c0" [label="{_dns_getnetbyname}"];
+	"Node0x8056310c0" -> "Node0x805625d80" [color="#00000033"];
+
+	"Node0x8056a6500" [label="{clnt_broadcast}"];
+	"Node0x8056a6500" -> "Node0x805697ee0" [color="#00000033"];
+
+	"Node0x8056276a0" [label="{gethostbyname}"];
+	"Node0x8056276a0" -> "Node0x8056273a0" [color="#00000033"];
+
+}

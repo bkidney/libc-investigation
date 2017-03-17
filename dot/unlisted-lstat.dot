@@ -1,0 +1,285 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x803d34090" [label="{__rec_open}"];
+	"Node0x803d34090" -> "Node0x8083fbf80" [color="#00000033"];
+
+	"Node0x807dc1a60" [label="{getwd}"];
+	"Node0x807dc1a60" -> "Node0x807dc1ac0" [color="#00000033"];
+
+	"Node0x80566b440" [label="{mktemp}"];
+	"Node0x80566b440" -> "Node0x80566b3e0" [color="#00000033"];
+
+	"Node0x807346a80" [label="{pwdbopen}"];
+	"Node0x807346a80" -> "Node0x803cff1a0" [color="#00000033"];
+
+	"Node0x803d341b0" [label="{init_hash}"];
+	"Node0x803d341b0" -> "Node0x803d34540" [color="#00000033"];
+
+	"Node0x80566b1a0" [label="{mkostemps}"];
+	"Node0x80566b1a0" -> "Node0x80566b200" [color="#00000033"];
+
+	"Node0x80814c240" [label="{__fts_children_44bsd}"];
+	"Node0x80814c240" -> "Node0x80814c060" [color="#00000033"];
+
+	"Node0x80566b3e0" [label="{_mktemp}"];
+	"Node0x80566b3e0" -> "Node0x80566b200" [color="#00000033"];
+
+	"Node0x803d2d960" [label="{getent}"];
+	"Node0x803d2d960" -> "Node0x803d2d960" [color="#00000033"];
+	"Node0x803d2d960" -> "Node0x803cff1a0" [color="#00000033"];
+
+	"Node0x803d354a0" [label="{newbuf}"];
+	"Node0x803d354a0" -> "Node0x803d34cc0" [color="#00000033"];
+
+	"Node0x80813d3c0" [label="{glob3}"];
+	"Node0x80813d3c0" -> "Node0x80813d1e0" [color="#00000033"];
+
+	"Node0x8043d5060" [label="{getdiskbyname}"];
+	"Node0x8043d5060" -> "Node0x8043d50c0" [color="#00000033"];
+
+	"Node0x803d353e0" [label="{collect_key}"];
+	"Node0x803d353e0" -> "Node0x803d353e0" [color="#00000033"];
+	"Node0x803d353e0" -> "Node0x803d34f30" [color="#00000033"];
+	"Node0x803d353e0" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x80566b2c0" [label="{mkstemps}"];
+	"Node0x80566b2c0" -> "Node0x80566b200" [color="#00000033"];
+
+	"Node0x803d34270" [label="{alloc_segs}"];
+	"Node0x803d34270" -> "Node0x803d343c0" [color="#00000033"];
+
+	"Node0x803d35aa0" [label="{dbm_open}"];
+	"Node0x803d35aa0" -> "Node0x803d34030" [color="#00000033"];
+
+	"Node0x808144fa0" [label="{__fts_read_44bsd}"];
+	"Node0x808144fa0" -> "Node0x808144dc0" [color="#00000033"];
+	"Node0x808144fa0" -> "Node0x80814c060" [color="#00000033"];
+
+	"Node0x803d34540" [label="{init_htab}"];
+	"Node0x803d34540" -> "Node0x803d34270" [color="#00000033"];
+
+	"Node0x803d343c0" [label="{hdestroy.3708}"];
+	"Node0x803d343c0" -> "Node0x803d345a0" [color="#00000033"];
+	"Node0x803d343c0" -> "Node0x803d34600" [color="#00000033"];
+
+	"Node0x803d346f0" [label="{hash_close}"];
+	"Node0x803d346f0" -> "Node0x803d343c0" [color="#00000033"];
+
+	"Node0x803d34fc0" [label="{__delpair}"];
+	"Node0x803d34fc0" -> "Node0x803d352c0" [color="#00000033"];
+
+	"Node0x807348e20" [label="{globexp0}"];
+	"Node0x807348e20" -> "Node0x807348e80" [color="#00000033"];
+	"Node0x807348e20" -> "Node0x807348f40" [color="#00000033"];
+
+	"Node0x8073469c0" [label="{files_setpwent}"];
+	"Node0x8073469c0" -> "Node0x807346a80" [color="#00000033"];
+
+	"Node0x807346ba0" [label="{compat_setpwent}"];
+	"Node0x807346ba0" -> "Node0x807346a80" [color="#00000033"];
+
+	"Node0x805632980" [label="{db_servent}"];
+	"Node0x805632980" -> "Node0x803cff1a0" [color="#00000033"];
+
+	"Node0x803d34f30" [label="{__big_return}"];
+	"Node0x803d34f30" -> "Node0x803d35380" [color="#00000033"];
+	"Node0x803d34f30" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x803d34e70" [label="{__find_last_page}"];
+	"Node0x803d34e70" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x80566b200" [label="{_gettemp}"];
+	"Node0x80566b200" -> "Node0x803d2dea0" [color="#00000033"];
+
+	"Node0x80566b320" [label="{mkstemp}"];
+	"Node0x80566b320" -> "Node0x80566b200" [color="#00000033"];
+
+	"Node0x803d347e0" [label="{hash_access}"];
+	"Node0x803d347e0" -> "Node0x803d34fc0" [color="#00000033"];
+	"Node0x803d347e0" -> "Node0x803d34f30" [color="#00000033"];
+	"Node0x803d347e0" -> "Node0x803d34e70" [color="#00000033"];
+	"Node0x803d347e0" -> "Node0x803d34e10" [color="#00000033"];
+	"Node0x803d347e0" -> "Node0x803d34ed0" [color="#00000033"];
+	"Node0x803d347e0" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x80813d300" [label="{g_lstat}"];
+	"Node0x80813d300" -> "Node0x803d2dea0" [color="#00000033"];
+
+	"Node0x803d34030" [label="{__hash_open}"];
+	"Node0x803d34030" -> "Node0x803d343c0" [color="#00000033"];
+	"Node0x803d34030" -> "Node0x803d34270" [color="#00000033"];
+	"Node0x803d34030" -> "Node0x803d341b0" [color="#00000033"];
+
+	"Node0x803d34930" [label="{hash_put}"];
+	"Node0x803d34930" -> "Node0x803d347e0" [color="#00000033"];
+
+	"Node0x807dc1ac0" [label="{getcwd}"];
+	"Node0x807dc1ac0" -> "Node0x803d2dea0" [color="#00000033"];
+
+	"Node0x803d35440" [label="{__big_split}"];
+	"Node0x803d35440" -> "Node0x803d34a50" [color="#00000033"];
+	"Node0x803d35440" -> "Node0x803d34e70" [color="#00000033"];
+	"Node0x803d35440" -> "Node0x803d349f0" [color="#00000033"];
+	"Node0x803d35440" -> "Node0x803d35260" [color="#00000033"];
+
+	"Node0x805614120" [label="{tmpfile}"];
+	"Node0x805614120" -> "Node0x80566b320" [color="#00000033"];
+
+	"Node0x807348f40" [label="{globexp1}"];
+	"Node0x807348f40" -> "Node0x807348e80" [color="#00000033"];
+	"Node0x807348f40" -> "Node0x80813d6c0" [color="#00000033"];
+
+	"Node0x803d359e0" [label="{open_temp}"];
+	"Node0x803d359e0" -> "Node0x803d34c30" [color="#00000033"];
+
+	"Node0x803d345a0" [label="{__buf_free}"];
+	"Node0x803d345a0" -> "Node0x803d34cc0" [color="#00000033"];
+
+	"Node0x803d2dae0" [label="{cgetfirst}"];
+	"Node0x803d2dae0" -> "Node0x803d2dba0" [color="#00000033"];
+
+	"Node0x803d34c30" [label="{mkostemp}"];
+	"Node0x803d34c30" -> "Node0x80566b200" [color="#00000033"];
+
+	"Node0x8083fbf80" [label="{__bt_open}"];
+	"Node0x8083fbf80" -> "Node0x8083fbd70" [color="#00000033"];
+
+	"Node0x803d35380" [label="{collect_data}"];
+	"Node0x803d35380" -> "Node0x803d35380" [color="#00000033"];
+	"Node0x803d35380" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x803d351a0" [label="{__big_insert}"];
+	"Node0x803d351a0" -> "Node0x803d35260" [color="#00000033"];
+
+	"Node0x803d34ab0" [label="{hash_sync}"];
+	"Node0x803d34ab0" -> "Node0x803d345a0" [color="#00000033"];
+	"Node0x803d34ab0" -> "Node0x803d34600" [color="#00000033"];
+
+	"Node0x805639e20" [label="{iruserok}"];
+	"Node0x805639e20" -> "Node0x805639b80" [color="#00000033"];
+
+	"Node0x805614180" [label="{tmpnam}"];
+	"Node0x805614180" -> "Node0x80566b3e0" [color="#00000033"];
+
+	"Node0x803d35080" [label="{__expand_table}"];
+	"Node0x803d35080" -> "Node0x803d35140" [color="#00000033"];
+
+	"Node0x80813d6c0" [label="{globexp2}"];
+	"Node0x80813d6c0" -> "Node0x807348e80" [color="#00000033"];
+	"Node0x80813d6c0" -> "Node0x807348f40" [color="#00000033"];
+
+	"Node0x807347620" [label="{compat_passwd}"];
+	"Node0x807347620" -> "Node0x807347740" [color="#00000033"];
+	"Node0x807347620" -> "Node0x807346a80" [color="#00000033"];
+
+	"Node0x803d352c0" [label="{__big_delete}"];
+	"Node0x803d352c0" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x803d349f0" [label="{__get_buf}"];
+	"Node0x803d349f0" -> "Node0x803d354a0" [color="#00000033"];
+
+	"Node0x803d34ed0" [label="{__addel}"];
+	"Node0x803d34ed0" -> "Node0x803d351a0" [color="#00000033"];
+	"Node0x803d34ed0" -> "Node0x803d35260" [color="#00000033"];
+	"Node0x803d34ed0" -> "Node0x803d35080" [color="#00000033"];
+	"Node0x803d34ed0" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x808144dc0" [label="{fts_stat.661}"];
+	"Node0x808144dc0" -> "Node0x803d2dea0" [color="#00000033"];
+
+	"Node0x803cff1a0" [label="{dbopen}"];
+	"Node0x803cff1a0" -> "Node0x8083fbf80" [color="#00000033"];
+	"Node0x803cff1a0" -> "Node0x803d34090" [color="#00000033"];
+	"Node0x803cff1a0" -> "Node0x803d34030" [color="#00000033"];
+
+	"Node0x8043d50c0" [label="{cgetent}"];
+	"Node0x8043d50c0" -> "Node0x803d2d960" [color="#00000033"];
+
+	"Node0x807347380" [label="{files_passwd}"];
+	"Node0x807347380" -> "Node0x807346a80" [color="#00000033"];
+
+	"Node0x803d35140" [label="{__split_page}"];
+	"Node0x803d35140" -> "Node0x803d356b0" [color="#00000033"];
+	"Node0x803d35140" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x8056140c0" [label="{tempnam}"];
+	"Node0x8056140c0" -> "Node0x80566b3e0" [color="#00000033"];
+
+	"Node0x805639b80" [label="{iruserok_sa}"];
+	"Node0x805639b80" -> "Node0x803d2dea0" [color="#00000033"];
+
+	"Node0x80813d1e0" [label="{glob2}"];
+	"Node0x80813d1e0" -> "Node0x80813d3c0" [color="#00000033"];
+	"Node0x80813d1e0" -> "Node0x80813d300" [color="#00000033"];
+
+	"Node0x803d348d0" [label="{hash_get}"];
+	"Node0x803d348d0" -> "Node0x803d347e0" [color="#00000033"];
+
+	"Node0x803d34600" [label="{flush_meta}"];
+	"Node0x803d34600" -> "Node0x803d34cc0" [color="#00000033"];
+
+	"Node0x80813d0c0" [label="{glob1}"];
+	"Node0x80813d0c0" -> "Node0x80813d1e0" [color="#00000033"];
+
+	"Node0x803d34a50" [label="{__big_keydata}"];
+	"Node0x803d34a50" -> "Node0x803d353e0" [color="#00000033"];
+
+	"Node0x803d34990" [label="{hash_seq}"];
+	"Node0x803d34990" -> "Node0x803d34a50" [color="#00000033"];
+	"Node0x803d34990" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x80566b380" [label="{mkdtemp}"];
+	"Node0x80566b380" -> "Node0x80566b200" [color="#00000033"];
+
+	"Node0x807348d60" [label="{glob}"];
+	"Node0x807348d60" -> "Node0x807348e80" [color="#00000033"];
+	"Node0x807348d60" -> "Node0x807348e20" [color="#00000033"];
+
+	"Node0x803d34780" [label="{hash_delete}"];
+	"Node0x803d34780" -> "Node0x803d347e0" [color="#00000033"];
+
+	"Node0x8083fbd70" [label="{tmp}"];
+	"Node0x8083fbd70" -> "Node0x803d34c30" [color="#00000033"];
+
+	"Node0x805639b20" [label="{ruserok}"];
+	"Node0x805639b20" -> "Node0x805639b80" [color="#00000033"];
+
+	"Node0x803d2dea0" [label="{lstat}"];
+
+	"Node0x803d34e10" [label="{__find_bigpair}"];
+	"Node0x803d34e10" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x803d2dba0" [label="{cgetnext}"];
+	"Node0x803d2dba0" -> "Node0x803d2d960" [color="#00000033"];
+
+	"Node0x8056c9260" [label="{realpath}"];
+	"Node0x8056c9260" -> "Node0x807dc1ac0" [color="#00000033"];
+	"Node0x8056c9260" -> "Node0x803d2dea0" [color="#00000033"];
+
+	"Node0x807348e80" [label="{glob0}"];
+	"Node0x807348e80" -> "Node0x80813d0c0" [color="#00000033"];
+
+	"Node0x807347740" [label="{compat_exclude}"];
+	"Node0x807347740" -> "Node0x803cff1a0" [color="#00000033"];
+
+	"Node0x803d34cc0" [label="{__put_page}"];
+	"Node0x803d34cc0" -> "Node0x803d359e0" [color="#00000033"];
+
+	"Node0x803d35260" [label="{__add_ovflpage}"];
+	"Node0x803d35260" -> "Node0x803d349f0" [color="#00000033"];
+
+	"Node0x808144c40" [label="{__fts_open_44bsd}"];
+	"Node0x808144c40" -> "Node0x808144dc0" [color="#00000033"];
+
+	"Node0x80566c520" [label="{remove}"];
+	"Node0x80566c520" -> "Node0x803d2dea0" [color="#00000033"];
+
+	"Node0x80814c060" [label="{fts_build.667}"];
+	"Node0x80814c060" -> "Node0x808144dc0" [color="#00000033"];
+
+	"Node0x803d356b0" [label="{ugly_split}"];
+	"Node0x803d356b0" -> "Node0x803d35440" [color="#00000033"];
+	"Node0x803d356b0" -> "Node0x803d35260" [color="#00000033"];
+	"Node0x803d356b0" -> "Node0x803d349f0" [color="#00000033"];
+
+}

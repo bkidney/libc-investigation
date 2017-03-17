@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80814e280" [label="{ksem_trywait}"];
+
+	"Node0x80814e220" [label="{_libc_sem_trywait_compat}"];
+	"Node0x80814e220" -> "Node0x80814e280" [color="#00000033"];
+
+}

@@ -1,0 +1,11 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80813f760" [label="{truncate}"];
+
+	"Node0x80813f580" [label="{utx_active_purge}"];
+	"Node0x80813f580" -> "Node0x80813f760" [color="#00000033"];
+
+	"Node0x80813f400" [label="{pututxline}"];
+	"Node0x80813f400" -> "Node0x80813f580" [color="#00000033"];
+
+}

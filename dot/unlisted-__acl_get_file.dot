@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x8056482a0" [label="{__acl_get_file}"];
+
+	"Node0x805648240" [label="{acl_get_file}"];
+	"Node0x805648240" -> "Node0x8056482a0" [color="#00000033"];
+
+}

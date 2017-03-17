@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80814e460" [label="{ksem_getvalue}"];
+
+	"Node0x80814e400" [label="{_libc_sem_getvalue_compat}"];
+	"Node0x80814e400" -> "Node0x80814e460" [color="#00000033"];
+
+}

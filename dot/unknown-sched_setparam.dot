@@ -1,0 +1,17 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80813e7a0" [label="{do_posix_spawn}"];
+	"Node0x80813e7a0" -> "Node0x80813e800" [color="#00000033"];
+
+	"Node0x80813ec20" [label="{posix_spawnp}"];
+	"Node0x80813ec20" -> "Node0x80813e7a0" [color="#00000033"];
+
+	"Node0x80813e800" [label="{process_spawnattr}"];
+	"Node0x80813e800" -> "Node0x80813e980" [color="#00000033"];
+
+	"Node0x80813e980" [label="{sched_setparam}"];
+
+	"Node0x80813e740" [label="{posix_spawn}"];
+	"Node0x80813e740" -> "Node0x80813e7a0" [color="#00000033"];
+
+}

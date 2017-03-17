@@ -1,0 +1,157 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x8073473e0" [label="{nis_passwd}"];
+	"Node0x8073473e0" -> "Node0x803d2dfc0" [color="#00000033"];
+
+	"Node0x8056c13c0" [label="{yp_get_default_domain_locked}"];
+	"Node0x8056c13c0" -> "Node0x803d2dfc0" [color="#00000033"];
+
+	"Node0x805631540" [label="{_getnetbynis}"];
+	"Node0x805631540" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x805639e20" [label="{iruserok}"];
+	"Node0x805639e20" -> "Node0x805639b80" [color="#00000033"];
+
+	"Node0x8056ae680" [label="{getpublickey}"];
+	"Node0x8056ae680" -> "Node0x8056af760" [color="#00000033"];
+
+	"Node0x8056a7f40" [label="{_authenticate}"];
+	"Node0x8056a7f40" -> "Node0x8056ad0c0" [color="#00000033"];
+
+	"Node0x8056afac0" [label="{host2netname}"];
+	"Node0x8056afac0" -> "Node0x8056afb80" [color="#00000033"];
+
+	"Node0x803d2fee0" [label="{compat_setnetgrent}"];
+	"Node0x803d2fee0" -> "Node0x803d2fe80" [color="#00000033"];
+
+	"Node0x803d2dfc0" [label="{getdomainname}"];
+
+	"Node0x805626fe0" [label="{_gethostbynisname_r}"];
+	"Node0x805626fe0" -> "Node0x805627040" [color="#00000033"];
+
+	"Node0x8056314e0" [label="{_nis_getnetbyname}"];
+	"Node0x8056314e0" -> "Node0x805631540" [color="#00000033"];
+
+	"Node0x805639e80" [label="{__ivaliduser}"];
+	"Node0x805639e80" -> "Node0x805639be0" [color="#00000033"];
+
+	"Node0x8056ae6e0" [label="{authdes_pk_seccreate}"];
+	"Node0x8056ae6e0" -> "Node0x8056ae740" [color="#00000033"];
+
+	"Node0x8056afd00" [label="{get_default_domain}"];
+	"Node0x8056afd00" -> "Node0x803d2dfc0" [color="#00000033"];
+
+	"Node0x805639be0" [label="{__ivaliduser_sa}"];
+	"Node0x805639be0" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x8056315a0" [label="{_nis_getnetbyaddr}"];
+	"Node0x8056315a0" -> "Node0x805631540" [color="#00000033"];
+
+	"Node0x805627040" [label="{_gethostbynis}"];
+	"Node0x805627040" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x805627100" [label="{_gethostbynisaddr_r}"];
+	"Node0x805627100" -> "Node0x805627040" [color="#00000033"];
+
+	"Node0x807348580" [label="{_nis_initshells}"];
+	"Node0x807348580" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x805639b80" [label="{iruserok_sa}"];
+	"Node0x805639b80" -> "Node0x805639be0" [color="#00000033"];
+
+	"Node0x8056afca0" [label="{netname2host}"];
+	"Node0x8056afca0" -> "Node0x8056afb80" [color="#00000033"];
+	"Node0x8056afca0" -> "Node0x8056afbe0" [color="#00000033"];
+
+	"Node0x8056ae740" [label="{getnetname}"];
+	"Node0x8056ae740" -> "Node0x8056afac0" [color="#00000033"];
+	"Node0x8056ae740" -> "Node0x8056afb20" [color="#00000033"];
+
+	"Node0x8056af700" [label="{getpublicandprivatekey}"];
+	"Node0x8056af700" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x805639ee0" [label="{__ivaliduser_af}"];
+	"Node0x805639ee0" -> "Node0x805639be0" [color="#00000033"];
+
+	"Node0x805626f80" [label="{_nis_gethostbyname}"];
+	"Node0x805626f80" -> "Node0x805626fe0" [color="#00000033"];
+
+	"Node0x803d2fe80" [label="{parse_netgrp}"];
+	"Node0x803d2fe80" -> "Node0x803d2fe80" [color="#00000033"];
+	"Node0x803d2fe80" -> "Node0x807346000" [color="#00000033"];
+
+	"Node0x805622ca0" [label="{eui64_hostton}"];
+	"Node0x805622ca0" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x805622a00" [label="{ether_ntohost}"];
+	"Node0x805622a00" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x8056a6680" [label="{authdes_seccreate}"];
+	"Node0x8056a6680" -> "Node0x8056ae6e0" [color="#00000033"];
+	"Node0x8056a6680" -> "Node0x8056ae680" [color="#00000033"];
+
+	"Node0x805639b20" [label="{ruserok}"];
+	"Node0x805639b20" -> "Node0x805639b80" [color="#00000033"];
+
+	"Node0x805622be0" [label="{eui64_ntohost}"];
+	"Node0x805622be0" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x80569a580" [label="{nis_rpcent}"];
+	"Node0x80569a580" -> "Node0x803d2dfc0" [color="#00000033"];
+
+	"Node0x8056afb20" [label="{user2netname}"];
+	"Node0x8056afb20" -> "Node0x8056afb80" [color="#00000033"];
+
+	"Node0x8056afa00" [label="{authdes_getucred}"];
+	"Node0x8056afa00" -> "Node0x8056afa60" [color="#00000033"];
+
+	"Node0x805632aa0" [label="{nis_servent}"];
+	"Node0x805632aa0" -> "Node0x803d2dfc0" [color="#00000033"];
+
+	"Node0x805625ea0" [label="{_yp_getaddrinfo}"];
+	"Node0x805625ea0" -> "Node0x805625f00" [color="#00000033"];
+
+	"Node0x803d2fe20" [label="{files_setnetgrent}"];
+	"Node0x803d2fe20" -> "Node0x803d2fe80" [color="#00000033"];
+
+	"Node0x8056270a0" [label="{_nis_gethostbyaddr}"];
+	"Node0x8056270a0" -> "Node0x805627100" [color="#00000033"];
+
+	"Node0x803d2ed40" [label="{nis_group}"];
+	"Node0x803d2ed40" -> "Node0x803d2dfc0" [color="#00000033"];
+
+	"Node0x805625f00" [label="{_yp_check}"];
+	"Node0x805625f00" -> "Node0x8056c13c0" [color="#00000033"];
+
+	"Node0x8056afb80" [label="{__rpc_get_default_domain}"];
+	"Node0x8056afb80" -> "Node0x8056afd00" [color="#00000033"];
+
+	"Node0x8056afa60" [label="{netname2user}"];
+	"Node0x8056afa60" -> "Node0x8056afb80" [color="#00000033"];
+	"Node0x8056afa60" -> "Node0x8056afbe0" [color="#00000033"];
+
+	"Node0x807346060" [label="{yp_get_default_domain}"];
+	"Node0x807346060" -> "Node0x8056c13c0" [color="#00000033"];
+
+	"Node0x8056ad0c0" [label="{_svcauth_des}"];
+	"Node0x8056ad0c0" -> "Node0x8056ae680" [color="#00000033"];
+
+	"Node0x8056afbe0" [label="{getnetid}"];
+	"Node0x8056afbe0" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x807346240" [label="{compat_innetgr}"];
+	"Node0x807346240" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x8056a6620" [label="{authdes_create}"];
+	"Node0x8056a6620" -> "Node0x8056a6680" [color="#00000033"];
+
+	"Node0x805622ac0" [label="{ether_hostton}"];
+	"Node0x805622ac0" -> "Node0x807346060" [color="#00000033"];
+
+	"Node0x8056af760" [label="{__getpublickey_real}"];
+	"Node0x8056af760" -> "Node0x8056af700" [color="#00000033"];
+
+	"Node0x807346000" [label="{read_for_group}"];
+	"Node0x807346000" -> "Node0x807346060" [color="#00000033"];
+
+}

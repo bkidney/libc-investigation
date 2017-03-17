@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80814dc80" [label="{ksem_unlink}"];
+
+	"Node0x80814dc20" [label="{_libc_sem_unlink_compat}"];
+	"Node0x80814dc20" -> "Node0x80814dc80" [color="#00000033"];
+
+}

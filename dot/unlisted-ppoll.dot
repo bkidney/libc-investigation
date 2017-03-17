@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80813ff40" [label="{ppoll}"];
+
+	"Node0x80813fee0" [label="{recvmmsg}"];
+	"Node0x80813fee0" -> "Node0x80813ff40" [color="#00000033"];
+
+}

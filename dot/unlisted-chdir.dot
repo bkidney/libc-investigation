@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x8043d2ca0" [label="{daemon}"];
+	"Node0x8043d2ca0" -> "Node0x8043d2e20" [color="#00000033"];
+
+	"Node0x8043d2e20" [label="{chdir}"];
+
+}
