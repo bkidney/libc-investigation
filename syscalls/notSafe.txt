@@ -1,0 +1,10 @@
+__mac_get_pid
+audit
+cpuset
+cpuset_getaffinity
+cpuset_getid
+cpuset_setaffinity
+cpuset_setid
+ktrace
+ptrace
+thr_kill2
