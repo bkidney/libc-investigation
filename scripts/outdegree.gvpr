@@ -1,0 +1,4 @@
+N {
+    printf("%d %-30s\n", $.outdegree, $.label);
+}
+
