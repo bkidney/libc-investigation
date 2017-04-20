@@ -126,7 +126,6 @@ compat7.shmctl
 connect
 eaccess
 execve
-exit
 extattr_delete_file
 extattr_delete_link
 extattr_get_file
