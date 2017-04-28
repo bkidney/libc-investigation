@@ -1,0 +1,11 @@
+digraph "Call graph" {
+	graph [label="Call graph"];
+	node [style=filled];
+	Node0x80564a280	 [fillcolor="1.0,0.0,1.0",
+		label="{mac_get_pid}"];
+	Node0x80564a2e0	 [fillcolor="1.0,0.0,1.0",
+		label="{__mac_get_pid}",
+		shape=box];
+	Node0x80564a280 -> Node0x80564a2e0	 [color="#00000033"];
+}
+

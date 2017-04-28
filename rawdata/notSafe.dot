@@ -1,0 +1,8 @@
+digraph "Call graph" {
+	label="Call graph";
+	"Node0x80564a280" [label="{mac_get_pid}"];
+	"Node0x80564a280" -> "Node0x80564a2e0" [color="#00000033"];
+
+	"Node0x80564a2e0" [label="{__mac_get_pid}"];
+
+}
